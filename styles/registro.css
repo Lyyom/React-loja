@@ -1,0 +1,145 @@
+body{
+    background-color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* Evita o scroll horizontal */
+}
+
+/* Estilos para área de registro */
+.area-registro{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o container de registro */
+.registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#7D09C0;
+    text-align: center;
+    width: 90%; /* Ajuste responsivo para a largura */
+    max-width: 450px; /* Limita a largura máxima */
+    padding: 35px;
+    margin: 0 auto;
+}
+
+/* Estilos para o formulário */
+.registro form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilos para os inputs */
+.registro input{
+    margin-top: 10px;
+    background-color: #252a34;
+    padding-left: 10px;
+    color: white;
+    border:none;
+    height: 45px; /* Ajuste para ser mais responsivo */
+    width: 100%; /* Alinha a largura dos inputs ao container */
+    outline: none;
+    border-radius: 8px;
+}
+
+/* Estilo para as imagens */
+.registro img{
+    width: 65px;
+    height: auto;
+}
+
+/* Placeholder styling */
+.input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+
+/* Estilo para o botão de submit */
+form [type="submit"]{ /* Corrigi o typo 'sumbit' para 'submit' */
+    display: block;
+    background-color:#5568FE;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+/* Parágrafos */
+p{
+    color:white;
+    margin-top: 15px;
+}
+
+/* Links */
+a{
+    color:#f70078;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+/* Estilo para o botão fixo */
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #5568FE;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    color:#f70078;
+    border: 2px solid #5568FE;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito hover no botão fixo */
+.btn-fixed:hover {
+    background-color: #4454d4;
+    color: #fff;
+}
+
+/* Media queries para tornar o layout responsivo */
+@media (max-width: 768px) {
+    .registro {
+        width: 100%; /* O container ocupa 100% da largura */
+        padding: 20px;
+    }
+
+    .registro input {
+        height: 40px; /* Altura reduzida em telas menores */
+    }
+
+    .btn-fixed {
+        font-size: 16px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro {
+        padding: 15px;
+    }
+
+    .registro input {
+        height: 35px;
+    }
+
+    .btn-fixed {
+        font-size: 14px;
+        bottom: 15px;
+        right: 15px;
+    }
+}

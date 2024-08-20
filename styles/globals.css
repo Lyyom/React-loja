@@ -1,0 +1,104 @@
+body{
+    background-color: #212529;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+
+}
+
+.area-login{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#7D09C0;
+    text-align: center;
+    width: 90%px;
+    max-width: 450px;
+    padding: 35px;
+    margin: 0 auto;
+    
+
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.login input{
+    margin-top: 10px;
+    background-color: #252a34;
+    padding-left: 10px;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 450px;
+    outline: none;
+    border-radius: 8px;
+    
+
+}
+
+.login img{
+    width: 65px;
+    height: auto;
+
+}
+.input::placeholder{
+    color: white;
+    font-size: 14px;
+
+}
+
+form [type="sumbit"]{
+    display: block;
+    background-color:#5568FE;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    color:white
+
+}
+
+a{
+    color:#f70078;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.btn-fixed {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #5568FE;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: none;
+    color:#f70078 ; /* Cor do texto */
+    border: 2px solid #5568FE; /* Adiciona uma borda */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+
+.btn-fixed:hover {
+    background-color: #4454d4; /* Cor de fundo quando o mouse está sobre */
+    color: #fff; /* Cor do texto quando o mouse está sobre */
+}
